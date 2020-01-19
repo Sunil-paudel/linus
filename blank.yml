@@ -1,0 +1,14 @@
+name: CI
+
+on: [push]
+
+jobs:intern
+build:Mit
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Sunil Paudel
+      run: echo Hello, world!
+      run: 
