@@ -1,0 +1,16 @@
+# random guessing game project
+import random
+top_of_range= int(input("please enter the top range for the guessing game-"))
+r = int(random.randint(1, top_of_range))
+user_guess = int(input("enter the guess number: "))
+while user_guess != r:
+    if user_guess > r:
+        print("your guess is greater than the required number")
+        user_guess = int(input("enter the guess number: "))
+    elif user_guess< r:
+        print("your guess is smaller than the required number")
+        user_guess = int(input("enter the guess number: "))
+        if user_guess == r:
+            print("your guess is right.")
+            break
+
